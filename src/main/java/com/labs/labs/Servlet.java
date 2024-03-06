@@ -1,4 +1,4 @@
-package com.laba2.laba2;
+package com.labs.labs;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;

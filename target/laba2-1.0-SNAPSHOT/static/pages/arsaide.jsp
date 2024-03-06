@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
     <head>
@@ -9,7 +10,7 @@
     </head>
     <body>
         <h2>Personal page</h2>
-        <p><a href="../index.html">Go Home</a></p>
+        <p><a href="../../index.jsp">Go Home</a></p>
         <p>Kirill Murahovskiy</p>
         <p>Group: IA-31</p>
         <p>GitHub: <a href="https://github.com/Arsaide">@arsaide</a></p>
