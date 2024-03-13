@@ -19,7 +19,7 @@
         <ul>
             <li><a href="static/labs/laba2">Laba 2</a></li>
             <li><a href="static/labs/laba3">Laba 3</a></li>
-            <li><a href="static/labs/laba4/actors.jsp">Laba 4</a></li>
+            <li><a href="static/labs/laba4">Laba 4</a></li>
         </ul>
 
         <img src="static/images/dancing-cat-6.gif" alt="Dancing cat yopta">

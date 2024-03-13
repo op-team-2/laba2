@@ -24,6 +24,6 @@ public class MainServlet extends HttpServlet {
         request.setAttribute("actors", database.getActors());
         request.setAttribute("movies", database.getMovies());
 
-        request.getRequestDispatcher("/actors.jsp").forward(request, response);
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }
