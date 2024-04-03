@@ -11,8 +11,8 @@
     </servlet>
 
     <servlet>
-        <servlet-name>MainServlet</servlet-name>
-        <servlet-class>com.labs.labs.MainServlet</servlet-class>
+        <servlet-name>ActorController</servlet-name>
+        <servlet-class>com.labs.labs.ActorController</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -20,8 +20,8 @@
         <url-pattern>/servlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>MainServlet</servlet-name>
-        <url-pattern>/MainServlet</url-pattern>
+        <servlet-name>ActorController</servlet-name>
+        <url-pattern>/ActorController</url-pattern>
     </servlet-mapping>
 
 </web-app>

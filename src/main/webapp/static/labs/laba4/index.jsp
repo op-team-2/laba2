@@ -1,22 +1,34 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Лаба 4</title>
-    </head>
-    <body>
-    <a href="../../../index.jsp">Home Page</a>
-    <h1>Laba 4</h1>
-    <ul>
-        <jsp:useBean id="actors" scope="request" type="com.labs.labs.MainServlet"/>
-        <c:if test="${not empty actors}">
-            <c:forEach var="actor" items="${actors}">
+<head>
+    <meta charset="UTF-8">
+    <title>Actors</title>
+</head>
+<body>
+<h1>Список Акторів і Фильмів</h1>
+<ul>
+    Актори
+    <c:forEach var="actor" items="${actors}">
+        <li>${actor.name}</li>
+        <ul>
+            <c:forEach var="movie" items="${actor.movies}">
+                <li>${movie.title}</li>
+            </c:forEach>
+        </ul>
+    </c:forEach>
+</ul>
+<ul>
+    Фільми
+    <c:forEach var="movie" items="${movies}">
+        <li>${movie.title}</li>
+        <ul>
+            <c:forEach var="actor" items="${movie.actors}">
                 <li>${actor.name}</li>
             </c:forEach>
-        </c:if>
-        <c:if test="${empty actors}">
-            <li>Немає акторів</li>
-        </c:if>
-    </ul>
-    </body>
+        </ul>
+    </c:forEach>
+</ul>
+</body>
 </html>

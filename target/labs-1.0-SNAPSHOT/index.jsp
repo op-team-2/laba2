@@ -1,4 +1,7 @@
+<%@ page import="com.labs.labs.lab4.Actor" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,7 +22,7 @@
         <ul>
             <li><a href="static/labs/laba2">Laba 2</a></li>
             <li><a href="static/labs/laba3">Laba 3</a></li>
-            <li><a href="static/labs/laba4">Laba 4</a></li>
+            <li><a href="${pageContext.request.contextPath}/main">Laba 4</a></li>
         </ul>
 
         <img src="static/images/dancing-cat-6.gif" alt="Dancing cat yopta">
